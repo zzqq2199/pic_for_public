@@ -1,0 +1,244 @@
+Finished initializing process group; backend: gloo, rank: 0, world_size: 4
+Send ranks:  {'out0': [1], 'target': [1]}
+Receive ranks:  {}
+rank=0, comm_handler.backend=gloo
+rank=0, comm_handler.backward_receive_queues={'out0': [<threadsafe_queue.Queue object at 0x7f5360aad128>], 'ack': [<threadsafe_queue.Queue object at 0x7f535962eef0>]}
+rank=0, comm_handler.backward_send_queues={'ack': []}
+rank=0, comm_handler.bwd_messaging_scheduling_col=0
+rank=0, comm_handler.bwd_messaging_scheduling_row=-1
+rank=0, comm_handler.create_process_groups=<bound method CommunicationHandler.create_process_groups of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.forward_receive_queues={'target': []}
+rank=0, comm_handler.forward_send_queues={'out0': [<threadsafe_queue.Queue object at 0x7f535962e358>], 'target': [<threadsafe_queue.Queue object at 0x7f535962eda0>]}
+rank=0, comm_handler.fp16=False
+rank=0, comm_handler.fwd_messaging_scheduling_col=0
+rank=0, comm_handler.fwd_messaging_scheduling_row=-1
+rank=0, comm_handler.get_messaging_index=<bound method CommunicationHandler.get_messaging_index of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.increment_messaging_index=<bound method CommunicationHandler.increment_messaging_index of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.initialize=<bound method CommunicationHandler.initialize of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.is_gpu_to_gpu_comm=<bound method CommunicationHandler.is_gpu_to_gpu_comm of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.local_rank=0
+rank=0, comm_handler.messaging_schedule=[]
+rank=0, comm_handler.num_ack_threads=1
+rank=0, comm_handler.num_backward_threads=1
+rank=0, comm_handler.num_forward_threads=2
+rank=0, comm_handler.num_iterations_for_helper_threads=<bound method CommunicationHandler.num_iterations_for_helper_threads of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.num_ranks_in_next_stage=1
+rank=0, comm_handler.num_ranks_in_previous_stage=0
+rank=0, comm_handler.num_ranks_in_server=1
+rank=0, comm_handler.num_ranks_in_stage=1
+rank=0, comm_handler.rank=0
+rank=0, comm_handler.rank_in_stage=0
+rank=0, comm_handler.ranks_in_next_stage=[1]
+rank=0, comm_handler.ranks_in_previous_stage=[]
+rank=0, comm_handler.ranks_in_server=[]
+rank=0, comm_handler.receive_ranks={}
+rank=0, comm_handler.recv=<bound method CommunicationHandler.recv of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.recv_helper_thread_args=<bound method CommunicationHandler.recv_helper_thread_args of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.register_tensor=<bound method CommunicationHandler.register_tensor of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.send=<bound method CommunicationHandler.send of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.send_helper_thread_args=<bound method CommunicationHandler.send_helper_thread_args of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.send_ranks={'out0': [1], 'target': [1]}
+rank=0, comm_handler.set_counter=<bound method CommunicationHandler.set_counter of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.set_tensor_shapes=<bound method CommunicationHandler.set_tensor_shapes of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.setup_messaging_schedule=<bound method CommunicationHandler.setup_messaging_schedule of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.setup_queues=<bound method CommunicationHandler.setup_queues of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.start_helper_thread=<bound method CommunicationHandler.start_helper_thread of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.start_helper_threads=<bound method CommunicationHandler.start_helper_threads of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.target_receive_rank_counts={}
+rank=0, comm_handler.target_send_rank_counts={1: 1}
+rank=0, comm_handler.target_tensor_names={'target'}
+rank=0, comm_handler.tensor_tags={'input0': 1, 'out0': 2, 'out1': 3, 'out2': 4, 'out3': 5, 'loss': 6, 'target': 7, 'ack': 8}
+rank=0, comm_handler.training_tensor_dtypes={'input0': torch.int64, 'target': torch.int64, 'out0': torch.float32, 'out1': torch.float32, 'out2': torch.float32, 'out3': torch.float32}
+rank=0, comm_handler.wait=<bound method CommunicationHandler.wait of <communication.CommunicationHandler object at 0x7f5360aad048>>
+rank=0, comm_handler.world_size=4
+Epoch: 0 Step 0 	Learning rate: 0.100000
+Epoch: [0][0/40036]	Memory: 3.929 (3.972)
+Finished initializing process group; backend: gloo, rank: 2, world_size: 4
+Send ranks:  {'out2': [3], 'target': [3]}
+Receive ranks:  {'out1': [1], 'target': [1]}
+rank=2, comm_handler.backend=gloo
+rank=2, comm_handler.backward_receive_queues={'out2': [<threadsafe_queue.Queue object at 0x7ff0a2ddbdd8>], 'ack': [<threadsafe_queue.Queue object at 0x7ff0a2e100b8>]}
+rank=2, comm_handler.backward_send_queues={'out1': [<threadsafe_queue.Queue object at 0x7ff0a2ddb320>], 'ack': [<threadsafe_queue.Queue object at 0x7ff0a2e10048>]}
+rank=2, comm_handler.bwd_messaging_scheduling_col=0
+rank=2, comm_handler.bwd_messaging_scheduling_row=0
+rank=2, comm_handler.create_process_groups=<bound method CommunicationHandler.create_process_groups of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.forward_receive_queues={'out1': [<threadsafe_queue.Queue object at 0x7ff0f57b7128>], 'target': [<threadsafe_queue.Queue object at 0x7ff0a2ddbf28>]}
+rank=2, comm_handler.forward_send_queues={'out2': [<threadsafe_queue.Queue object at 0x7ff0a2ddbe48>], 'target': [<threadsafe_queue.Queue object at 0x7ff0a2ddbf98>]}
+rank=2, comm_handler.fp16=False
+rank=2, comm_handler.fwd_messaging_scheduling_col=0
+rank=2, comm_handler.fwd_messaging_scheduling_row=0
+rank=2, comm_handler.get_messaging_index=<bound method CommunicationHandler.get_messaging_index of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.increment_messaging_index=<bound method CommunicationHandler.increment_messaging_index of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.initialize=<bound method CommunicationHandler.initialize of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.is_gpu_to_gpu_comm=<bound method CommunicationHandler.is_gpu_to_gpu_comm of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.local_rank=2
+rank=2, comm_handler.messaging_schedule=[[0]]
+rank=2, comm_handler.num_ack_threads=2
+rank=2, comm_handler.num_backward_threads=2
+rank=2, comm_handler.num_forward_threads=4
+rank=2, comm_handler.num_iterations_for_helper_threads=<bound method CommunicationHandler.num_iterations_for_helper_threads of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.num_ranks_in_next_stage=1
+rank=2, comm_handler.num_ranks_in_previous_stage=1
+rank=2, comm_handler.num_ranks_in_server=1
+rank=2, comm_handler.num_ranks_in_stage=1
+rank=2, comm_handler.rank=2
+rank=2, comm_handler.rank_in_stage=0
+rank=2, comm_handler.ranks_in_next_stage=[3]
+rank=2, comm_handler.ranks_in_previous_stage=[1]
+rank=2, comm_handler.ranks_in_server=[]
+rank=2, comm_handler.receive_ranks={'out1': [1], 'target': [1]}
+rank=2, comm_handler.recv=<bound method CommunicationHandler.recv of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.recv_helper_thread_args=<bound method CommunicationHandler.recv_helper_thread_args of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.register_tensor=<bound method CommunicationHandler.register_tensor of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.send=<bound method CommunicationHandler.send of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.send_helper_thread_args=<bound method CommunicationHandler.send_helper_thread_args of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.send_ranks={'out2': [3], 'target': [3]}
+rank=2, comm_handler.set_counter=<bound method CommunicationHandler.set_counter of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.set_tensor_shapes=<bound method CommunicationHandler.set_tensor_shapes of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.setup_messaging_schedule=<bound method CommunicationHandler.setup_messaging_schedule of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.setup_queues=<bound method CommunicationHandler.setup_queues of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.start_helper_thread=<bound method CommunicationHandler.start_helper_thread of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.start_helper_threads=<bound method CommunicationHandler.start_helper_threads of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.target_receive_rank_counts={1: 1}
+rank=2, comm_handler.target_send_rank_counts={3: 1}
+rank=2, comm_handler.target_tensor_names={'target'}
+rank=2, comm_handler.tensor_tags={'input0': 1, 'out0': 2, 'out1': 3, 'out2': 4, 'out3': 5, 'loss': 6, 'target': 7, 'ack': 8}
+rank=2, comm_handler.training_tensor_dtypes={'input0': torch.int64, 'target': torch.int64, 'out0': torch.float32, 'out1': torch.float32, 'out2': torch.float32, 'out3': torch.float32}
+rank=2, comm_handler.wait=<bound method CommunicationHandler.wait of <communication.CommunicationHandler object at 0x7ff0f57b7048>>
+rank=2, comm_handler.world_size=4
+Epoch: 0 Step 0 	Learning rate: 0.100000
+Epoch: [0][0/31250]	Memory: 1.569 (1.600)
+Finished initializing process group; backend: gloo, rank: 1, world_size: 4
+Send ranks:  {'out1': [2], 'target': [2]}
+Receive ranks:  {'out0': [0], 'target': [0]}
+rank=1, comm_handler.backend=gloo
+rank=1, comm_handler.backward_receive_queues={'out1': [<threadsafe_queue.Queue object at 0x7fd24e45add8>], 'ack': [<threadsafe_queue.Queue object at 0x7fd24e48e0b8>]}
+rank=1, comm_handler.backward_send_queues={'out0': [<threadsafe_queue.Queue object at 0x7fd24e45a320>], 'ack': [<threadsafe_queue.Queue object at 0x7fd24e48e048>]}
+rank=1, comm_handler.bwd_messaging_scheduling_col=0
+rank=1, comm_handler.bwd_messaging_scheduling_row=0
+rank=1, comm_handler.create_process_groups=<bound method CommunicationHandler.create_process_groups of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.forward_receive_queues={'out0': [<threadsafe_queue.Queue object at 0x7fd2558d8128>], 'target': [<threadsafe_queue.Queue object at 0x7fd24e45af28>]}
+rank=1, comm_handler.forward_send_queues={'out1': [<threadsafe_queue.Queue object at 0x7fd24e45ae48>], 'target': [<threadsafe_queue.Queue object at 0x7fd24e45af98>]}
+rank=1, comm_handler.fp16=False
+rank=1, comm_handler.fwd_messaging_scheduling_col=0
+rank=1, comm_handler.fwd_messaging_scheduling_row=0
+rank=1, comm_handler.get_messaging_index=<bound method CommunicationHandler.get_messaging_index of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.increment_messaging_index=<bound method CommunicationHandler.increment_messaging_index of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.initialize=<bound method CommunicationHandler.initialize of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.is_gpu_to_gpu_comm=<bound method CommunicationHandler.is_gpu_to_gpu_comm of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.local_rank=1
+rank=1, comm_handler.messaging_schedule=[[0]]
+rank=1, comm_handler.num_ack_threads=2
+rank=1, comm_handler.num_backward_threads=2
+rank=1, comm_handler.num_forward_threads=4
+rank=1, comm_handler.num_iterations_for_helper_threads=<bound method CommunicationHandler.num_iterations_for_helper_threads of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.num_ranks_in_next_stage=1
+rank=1, comm_handler.num_ranks_in_previous_stage=1
+rank=1, comm_handler.num_ranks_in_server=1
+rank=1, comm_handler.num_ranks_in_stage=1
+rank=1, comm_handler.rank=1
+rank=1, comm_handler.rank_in_stage=0
+rank=1, comm_handler.ranks_in_next_stage=[2]
+rank=1, comm_handler.ranks_in_previous_stage=[0]
+rank=1, comm_handler.ranks_in_server=[]
+rank=1, comm_handler.receive_ranks={'out0': [0], 'target': [0]}
+rank=1, comm_handler.recv=<bound method CommunicationHandler.recv of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.recv_helper_thread_args=<bound method CommunicationHandler.recv_helper_thread_args of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.register_tensor=<bound method CommunicationHandler.register_tensor of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.send=<bound method CommunicationHandler.send of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.send_helper_thread_args=<bound method CommunicationHandler.send_helper_thread_args of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.send_ranks={'out1': [2], 'target': [2]}
+rank=1, comm_handler.set_counter=<bound method CommunicationHandler.set_counter of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.set_tensor_shapes=<bound method CommunicationHandler.set_tensor_shapes of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.setup_messaging_schedule=<bound method CommunicationHandler.setup_messaging_schedule of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.setup_queues=<bound method CommunicationHandler.setup_queues of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.start_helper_thread=<bound method CommunicationHandler.start_helper_thread of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.start_helper_threads=<bound method CommunicationHandler.start_helper_threads of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.target_receive_rank_counts={0: 1}
+rank=1, comm_handler.target_send_rank_counts={2: 1}
+rank=1, comm_handler.target_tensor_names={'target'}
+rank=1, comm_handler.tensor_tags={'input0': 1, 'out0': 2, 'out1': 3, 'out2': 4, 'out3': 5, 'loss': 6, 'target': 7, 'ack': 8}
+rank=1, comm_handler.training_tensor_dtypes={'input0': torch.int64, 'target': torch.int64, 'out0': torch.float32, 'out1': torch.float32, 'out2': torch.float32, 'out3': torch.float32}
+rank=1, comm_handler.wait=<bound method CommunicationHandler.wait of <communication.CommunicationHandler object at 0x7fd2558d8048>>
+rank=1, comm_handler.world_size=4
+Epoch: 0 Step 0 	Learning rate: 0.100000
+Epoch: [0][0/31250]	Memory: 5.715 (5.717)
+Finished initializing process group; backend: gloo, rank: 3, world_size: 4
+Send ranks:  {}
+Receive ranks:  {'out2': [2], 'target': [2]}
+rank=3, comm_handler.backend=gloo
+rank=3, comm_handler.backward_receive_queues={'ack': []}
+rank=3, comm_handler.backward_send_queues={'out2': [<threadsafe_queue.Queue object at 0x7fef4d43ee10>], 'ack': [<threadsafe_queue.Queue object at 0x7fef4d43eef0>]}
+rank=3, comm_handler.bwd_messaging_scheduling_col=0
+rank=3, comm_handler.bwd_messaging_scheduling_row=0
+rank=3, comm_handler.create_process_groups=<bound method CommunicationHandler.create_process_groups of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.forward_receive_queues={'out2': [<threadsafe_queue.Queue object at 0x7fef4d43ed30>], 'target': [<threadsafe_queue.Queue object at 0x7fef4d43ee80>]}
+rank=3, comm_handler.forward_send_queues={'target': []}
+rank=3, comm_handler.fp16=False
+rank=3, comm_handler.fwd_messaging_scheduling_col=0
+rank=3, comm_handler.fwd_messaging_scheduling_row=0
+rank=3, comm_handler.get_messaging_index=<bound method CommunicationHandler.get_messaging_index of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.increment_messaging_index=<bound method CommunicationHandler.increment_messaging_index of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.initialize=<bound method CommunicationHandler.initialize of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.is_gpu_to_gpu_comm=<bound method CommunicationHandler.is_gpu_to_gpu_comm of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.local_rank=3
+rank=3, comm_handler.messaging_schedule=[[0]]
+rank=3, comm_handler.num_ack_threads=1
+rank=3, comm_handler.num_backward_threads=1
+rank=3, comm_handler.num_forward_threads=2
+rank=3, comm_handler.num_iterations_for_helper_threads=<bound method CommunicationHandler.num_iterations_for_helper_threads of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.num_ranks_in_next_stage=0
+rank=3, comm_handler.num_ranks_in_previous_stage=1
+rank=3, comm_handler.num_ranks_in_server=1
+rank=3, comm_handler.num_ranks_in_stage=1
+rank=3, comm_handler.rank=3
+rank=3, comm_handler.rank_in_stage=0
+rank=3, comm_handler.ranks_in_next_stage=[]
+rank=3, comm_handler.ranks_in_previous_stage=[2]
+rank=3, comm_handler.ranks_in_server=[]
+rank=3, comm_handler.receive_ranks={'out2': [2], 'target': [2]}
+rank=3, comm_handler.recv=<bound method CommunicationHandler.recv of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.recv_helper_thread_args=<bound method CommunicationHandler.recv_helper_thread_args of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.register_tensor=<bound method CommunicationHandler.register_tensor of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.send=<bound method CommunicationHandler.send of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.send_helper_thread_args=<bound method CommunicationHandler.send_helper_thread_args of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.send_ranks={}
+rank=3, comm_handler.set_counter=<bound method CommunicationHandler.set_counter of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.set_tensor_shapes=<bound method CommunicationHandler.set_tensor_shapes of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.setup_messaging_schedule=<bound method CommunicationHandler.setup_messaging_schedule of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.setup_queues=<bound method CommunicationHandler.setup_queues of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.start_helper_thread=<bound method CommunicationHandler.start_helper_thread of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.start_helper_threads=<bound method CommunicationHandler.start_helper_threads of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.target_receive_rank_counts={2: 1}
+rank=3, comm_handler.target_send_rank_counts={}
+rank=3, comm_handler.target_tensor_names={'target'}
+rank=3, comm_handler.tensor_tags={'input0': 1, 'out0': 2, 'out1': 3, 'out2': 4, 'out3': 5, 'loss': 6, 'target': 7, 'ack': 8}
+rank=3, comm_handler.training_tensor_dtypes={'input0': torch.int64, 'target': torch.int64, 'out0': torch.float32, 'out1': torch.float32, 'out2': torch.float32, 'out3': torch.float32}
+rank=3, comm_handler.wait=<bound method CommunicationHandler.wait of <communication.CommunicationHandler object at 0x7fef4d43ecc0>>
+rank=3, comm_handler.world_size=4
+Epoch: 0 Step 0 	Learning rate: 0.100000
+Epoch: [0][0/31250]	Time: 10.937 (10.937)	Epoch time [hr]: 0.003 (94.939)	Memory: 1.306 (1.327)	Loss: 6.9150 (6.9150)	Prec@1: 0.000 (0.000)	Prec@5: 0.000 (0.000)
+Epoch: [0][10/31250]	Time: 1.208 (1.862)	Epoch time [hr]: 0.006 (16.166)	Memory: 2.351 (2.986)	Loss: 6.9008 (6.9463)	Prec@1: 0.000 (0.284)	Prec@5: 0.000 (0.568)
+Epoch: [0][10/31250]	Memory: 1.833 (2.168)
+Epoch: [0][10/31250]	Memory: 6.336 (7.621)
+Epoch: [0][10/40036]	Memory: 4.360 (5.616)
+Epoch: [0][20/31250]	Time: 1.054 (1.582)	Epoch time [hr]: 0.009 (13.730)	Memory: 2.351 (2.986)	Loss: 6.9106 (6.9306)	Prec@1: 0.000 (0.149)	Prec@5: 0.000 (0.298)
+Epoch: [0][20/31250]	Memory: 1.833 (2.168)
+Epoch: [0][20/31250]	Memory: 6.233 (7.621)
+Epoch: [0][20/40036]	Memory: 4.360 (5.616)
+Epoch: [0][30/31250]	Time: 0.789 (1.454)	Epoch time [hr]: 0.013 (12.619)	Memory: 2.351 (2.986)	Loss: 6.9116 (6.9240)	Prec@1: 0.000 (0.101)	Prec@5: 0.000 (0.302)
+Epoch: [0][30/31250]	Memory: 1.833 (2.168)
+Epoch: [0][30/31250]	Memory: 6.336 (7.621)
+Epoch: [0][30/40036]	Memory: 4.360 (5.616)
+Epoch: [0][40/31250]	Time: 1.014 (1.398)	Epoch time [hr]: 0.016 (12.139)	Memory: 2.351 (2.986)	Loss: 6.9014 (6.9196)	Prec@1: 0.000 (0.076)	Prec@5: 0.000 (0.381)
+Epoch: [0][40/31250]	Memory: 1.833 (2.168)
+Epoch: [0][40/31250]	Memory: 6.336 (7.621)
+Epoch: [0][40/40036]	Memory: 4.360 (5.616)
+Epoch: [0][50/31250]	Time: 1.570 (1.357)	Epoch time [hr]: 0.019 (11.781)	Memory: 2.351 (2.986)	Loss: 6.9085 (6.9170)	Prec@1: 0.000 (0.123)	Prec@5: 0.000 (0.429)
+Epoch: [0][50/31250]	Memory: 1.833 (2.168)
+Epoch: [0][50/40036]	Memory: 4.360 (5.616)
+Epoch: [0][50/31250]	Memory: 6.336 (7.621)
+Epoch: [0][60/31250]	Time: 0.933 (1.335)	Epoch time [hr]: 0.023 (11.592)	Memory: 2.351 (2.986)	Loss: 6.9007 (6.9155)	Prec@1: 0.000 (0.102)	Prec@5: 0.000 (0.461)
+Epoch: [0][60/31250]	Memory: 1.833 (2.168)
+Epoch: [0][60/31250]	Memory: 6.336 (7.621)
+Epoch: [0][60/40036]	Memory: 4.360 (5.616)
